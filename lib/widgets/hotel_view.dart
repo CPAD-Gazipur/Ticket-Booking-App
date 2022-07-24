@@ -23,7 +23,7 @@ class HotelView extends StatelessWidget {
         top: 5,
       ),
       width: size.width * 0.6,
-      height: 350,
+      height: AppLayout.getHeight(320),
       decoration: BoxDecoration(
           color: AppStyles.primaryColor,
           borderRadius: BorderRadius.circular(24),
@@ -38,7 +38,7 @@ class HotelView extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Container(
-            height: 180,
+            height: AppLayout.getHeight(180),
             decoration: BoxDecoration(
               color: AppStyles.primaryColor,
               borderRadius: BorderRadius.circular(12),

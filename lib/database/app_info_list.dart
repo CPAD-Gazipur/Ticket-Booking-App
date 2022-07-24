@@ -36,3 +36,62 @@ List<Map<String, dynamic>> hotelList = [
     'price': 89,
   },
 ];
+
+List<Map<String, dynamic>> ticketList = [
+  {
+    'from': {
+      'code': 'DAC',
+      'name': 'Dhaka',
+    },
+    'to': {
+      'code': 'ZYL',
+      'name': 'Sylhet',
+    },
+    'flying_time': '01H 05M',
+    'date': '25 JUL',
+    'departure_time': '07:30 AM',
+    'number': 60,
+  },
+  {
+    'from': {
+      'code': 'NYC',
+      'name': 'New York',
+    },
+    'to': {
+      'code': 'LND',
+      'name': 'London',
+    },
+    'flying_time': '08H 30M',
+    'date': '1 MAY',
+    'departure_time': '08:00 AM',
+    'number': 23,
+  },
+  {
+    'from': {
+      'code': 'DAC',
+      'name': 'Dhaka',
+    },
+    'to': {
+      'code': 'CXB',
+      'name': 'Cox\'s Bazar',
+    },
+    'flying_time': '01H 05M',
+    'date': '25 JUL',
+    'departure_time': '07:30 AM',
+    'number': 60,
+  },
+  {
+    'from': {
+      'code': 'NYC',
+      'name': 'New York',
+    },
+    'to': {
+      'code': 'LND',
+      'name': 'London',
+    },
+    'flying_time': '08H 30M',
+    'date': '1 MAY',
+    'departure_time': '08:00 AM',
+    'number': 23,
+  },
+];
