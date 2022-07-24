@@ -7,6 +7,7 @@ class AppStyles {
   static Color textColor = const Color(0xFF3B3B3B);
   static Color backgroundColor = const Color(0xFFEEEDF2);
   static Color orangeColor = const Color(0xFFF37B67);
+  static Color khakiColor = const Color(0xFFD2BDB6);
 
   static TextStyle textStyle = TextStyle(
     fontSize: 16,

@@ -1,6 +1,7 @@
 import 'package:fluentui_icons/fluentui_icons.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
+import 'package:ticket_booking_app/database/app_info_list.dart';
 
 import '../utils/utils.dart';
 import '../widgets/widgets.dart';
@@ -103,6 +104,36 @@ class HomeScreen extends StatelessWidget {
               ],
             ),
           ),
+          const Gap(15),
+          Container(
+            padding: const EdgeInsets.symmetric(horizontal: 20),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text(
+                  'Hotels',
+                  style: AppStyles.headLineStyle2,
+                ),
+                InkWell(
+                  onTap: () {
+                    debugPrint('View all Clicked');
+                  },
+                  child: Text(
+                    'View all',
+                    style: AppStyles.textStyle.copyWith(color: primary),
+                  ),
+                ),
+              ],
+            ),
+          ),
+          SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            padding: const EdgeInsets.only(left: 20),
+            child: Row(
+              children:
+                  hotelList.map((hotel) => HotelView(hotel: hotel)).toList(),
+            ),
+          )
         ],
       ),
     );
