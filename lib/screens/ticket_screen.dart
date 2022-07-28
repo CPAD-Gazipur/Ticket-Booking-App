@@ -58,7 +58,7 @@ class TicketScreen extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: const [
                         CustomColumn(
-                          title: 'Flutter DB',
+                          title: 'Md. Al-Amin',
                           hintTitle: 'Passenger',
                           alignment: CrossAxisAlignment.start,
                           isColor: true,
@@ -185,6 +185,42 @@ class TicketScreen extends StatelessWidget {
                 ),
               ),
             ],
+          ),
+          Positioned(
+            left: AppLayout.getHeight(24),
+            top: AppLayout.getHeight(295),
+            child: Container(
+              padding: EdgeInsets.all(AppLayout.getHeight(3)),
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                border: Border.all(
+                  color: AppStyles.textColor,
+                  width: 2,
+                ),
+              ),
+              child: CircleAvatar(
+                maxRadius: 4,
+                backgroundColor: AppStyles.textColor,
+              ),
+            ),
+          ),
+          Positioned(
+            right: AppLayout.getHeight(24),
+            top: AppLayout.getHeight(295),
+            child: Container(
+              padding: EdgeInsets.all(AppLayout.getHeight(3)),
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                border: Border.all(
+                  color: AppStyles.textColor,
+                  width: 2,
+                ),
+              ),
+              child: CircleAvatar(
+                maxRadius: 4,
+                backgroundColor: AppStyles.textColor,
+              ),
+            ),
           ),
         ],
       ),
