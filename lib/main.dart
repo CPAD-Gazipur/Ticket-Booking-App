@@ -15,6 +15,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Ticket Booking App',
+      scrollBehavior: AppScrollBehavior(),
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primaryColor: primary,
